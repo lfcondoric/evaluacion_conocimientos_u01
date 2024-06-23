@@ -1,5 +1,6 @@
 //Ejercicio 3
 #include<iostream>
+#include<windows.h>
 
 using namespace std;
 
@@ -8,14 +9,22 @@ int factorial(int e);
 
 int main(){
 	
-	int n;
+	int n,a=1;
 	float su=0;
 	
 	cout<<"Ingrese un numero: ";cin>>n;
  	
  	su=suma(n);
  	
- 	cout<<su<<endl;
+ 	cout<<"Calculando";
+ 	while(a<=3){
+			cout<<".";
+			a++;
+			Sleep(1000);
+	}
+	cout<<endl;
+	
+ 	cout<<"La suma es: "<<su<<endl;
 
 	return 0;
 }
