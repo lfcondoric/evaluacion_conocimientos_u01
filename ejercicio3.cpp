@@ -10,11 +10,8 @@ int factorial(int e);
 int main(){
 	
 	int n,a=1;
-	float su=0;
 	
 	cout<<"Ingrese un numero: ";cin>>n;
- 	
- 	su=suma(n);
  	
  	cout<<"Calculando";
  	while(a<=3){
@@ -24,7 +21,11 @@ int main(){
 	}
 	cout<<endl;
 	
- 	cout<<"La suma es: "<<su<<endl;
+	if(n!=0){
+		cout<<"La suma es: "<<suma(n)<<endl;
+	}
+	else
+		cout<<"Indefinido\n";
 
 	return 0;
 }
