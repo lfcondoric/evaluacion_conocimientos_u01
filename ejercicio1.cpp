@@ -25,6 +25,7 @@ int main(){
 		case '/': r=a/b;
 				cout<<"El cociente es: "<<r<<endl;
 				break;	
+		
 	}
 	
 	return 0;
