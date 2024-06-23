@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 	
-	float a,b,r;
+	float a,b;
 	char op;
 	
 	cout<<"Ingrese un numero: ";cin>>a;
@@ -13,19 +13,19 @@ int main(){
 	cout<<"Ingrese un operador: ";cin>>op;
 	
 	switch(op){
-		case '+': r=a+b;
-				cout<<"La suma es: "<<r<<endl;
+		case'+':cout<<"La suma es: "<<a+b<<endl;
 				break;
-		case '-': r=a-b;
-				cout<<"La resta es: "<<r<<endl;
+		case'-':cout<<"La resta es: "<<a-b<<endl;
 				break;
-		case '*': r=a*b;
-				cout<<"El producto es: "<<r<<endl;
+		case'*':cout<<"El producto es: "<<a*b<<endl;
 				break;
-		case '/': r=a/b;
-				cout<<"El cociente es: "<<r<<endl;
+		case'/':if(b!=0){
+					cout<<"El cociente es: "<<a/b<<endl;
+				}
+				else
+					cout<<"Indefinido\n";
 				break;	
-		default : cout<<"Ingreso un operador incorrecto\n";
+		default:cout<<"Operador incorrecto\n";
 				break;
 	}
 	
